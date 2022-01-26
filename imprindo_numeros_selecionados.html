@@ -1,0 +1,35 @@
+<meta charset="utf-8">
+<!--Que tal uma dificuldade um pouco maior? Imprima todos os números entre 30 e 40 (inclusive 30 e 40), porém os números 33 e 37 não devem ser impressos! No final escreva a palavra "FIM". Use o while para essa tarefa. DICA: o if pode ajudá-lo! -->
+
+<script>
+// Criando função para pular Linha
+
+  function pulaLinha() {
+
+        document.write("<br>");
+    }
+// Criando função para substituir document.write por mostra chamando a função pular linha
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+// Declaração variável que irá servir como contador	
+
+	var cont = 30;
+
+//Criando função de repetição que imprime números de 30 a 40 excluindo os números 33 e 37 com a estrutura condicional IF
+
+	while (cont <= 40 ){
+		
+		if (cont != 33 && cont != 37) {
+
+				mostra(cont);	
+		}
+
+		cont = cont + 1;
+	}
+	mostra("Fim!")
+
+</script>
